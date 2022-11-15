@@ -10,17 +10,22 @@ import SwiftUI
 @available(iOS 16.0, *)
 class DetailViewModel: ObservableObject {
     
-    let router: ListViewModel
+    let router: NavigationShellViewModel
     let school: UISchool
     let testScores: TestScores
     @available(iOS 16.0, *)
     
-    init(router: ListViewModel,
+    init(router: NavigationShellViewModel,
          school: UISchool,
          testScores: TestScores) {
         self.router = router
         self.school = school
         self.testScores = testScores
+        print("DetailViewModel init")
+    }
+    
+    deinit {
+        print("DetailViewModel deinit")
     }
     
     func name(for school: UISchool) -> String {

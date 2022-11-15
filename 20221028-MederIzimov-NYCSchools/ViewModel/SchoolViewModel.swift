@@ -17,8 +17,8 @@ class SchoolViewModel: ObservableObject {
     
     private let databaseManager = DatabaseManager()
     
-    let router: ListViewModel
-    init(router: ListViewModel) {
+    let router: NavigationShellViewModel
+    init(router: NavigationShellViewModel) {
         self.router = router
         initializationSequence()
     }

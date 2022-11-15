@@ -10,7 +10,7 @@ import SwiftUI
 @available(iOS 16.0, *)
 struct SchoolView: View {
     @ObservedObject var viewModel: SchoolViewModel
-@State var searchText = ""
+
     var body: some View {
         GeometryReader { geo in
             ZStack{

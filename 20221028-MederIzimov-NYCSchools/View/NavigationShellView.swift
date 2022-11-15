@@ -8,11 +8,11 @@
 import SwiftUI
 
 @available(iOS 16.0, *)
-struct ListView: View {
-    @StateObject var router = ListViewModel()
+struct NavigationShellView: View {
+    @StateObject var router = NavigationShellViewModel()
     var body: some View {
         NavigationStack(path: $router.navigationPath) {
-            SchoolView(viewModel: router.schoolListViewModel)
+            SchoolView(viewModel: router.schoolViewModel)
         }
     }
 }

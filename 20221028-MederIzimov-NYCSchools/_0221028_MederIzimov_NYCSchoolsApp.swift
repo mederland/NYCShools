@@ -12,8 +12,9 @@ struct _0221028_MederIzimov_NYCSchoolsApp: App {
     var body: some Scene {
         WindowGroup {
             if #available(iOS 16.0, *) {
-                ListView()
+                NavigationShellView()
             } else {
+                fatalError("This Xcode or iPhone is too old")
             }
         }
     }

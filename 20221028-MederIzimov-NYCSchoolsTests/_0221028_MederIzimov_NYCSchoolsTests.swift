@@ -9,37 +9,15 @@ import XCTest
 @testable import _0221028_MederIzimov_NYCSchools
 
 class _0221028_MederIzimov_NYCSchoolsTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
     
     func testSchoolFetch() async {
         if #available(iOS 16.0, *) {
             
             let viewModel = SchoolViewModel(router: .init())
             do {
-                try await viewModel.fetch()
-                XCTAssert(viewModel.schools.count > 1)
+                let schools = try await viewModel.fetchSchools()
+                print("schools count = \(schools)")
+                XCTAssert(schools.count > 1)
             } catch {
                 XCTFail("Network Fail")
             }
@@ -54,17 +32,24 @@ class _0221028_MederIzimov_NYCSchoolsTests: XCTestCase {
         if #available(iOS 16.0, *) {
             do {
                 let viewModel = SchoolViewModel(router: .init())
-                try await viewModel.fetch()
+                let schools = try await viewModel.fetchSchools()
                 var numberOfMatches = 0
-                let numberOfSchools = viewModel.schools.count
+                let numberOfSchools = schools.count
                 let loops = min(10, numberOfSchools)
                 for index in 0..<loops {
-                    let school = viewModel.schools[index]
-                    let scores = try await viewModel.testScoresForSchool(model: school)
+                    let school = schools[index]
+                    let uiSchool = UISchool(dbn: school.dbn,
+                                            school_name: school.school_name ?? "",
+                                            primary_address_line_1: school.primary_address_line_1 ?? "",
+                                            city: school.city ?? "",
+                                            state_code: school.state_code ?? "",
+                                            zip: school.zip ?? "")
+                    let scores = try await viewModel.testScoresForSchool(model: uiSchool)
                     if scores != nil {
                         numberOfMatches += 1
                     }
                 }
+                print("numberOfMatches = \(numberOfMatches)")
                 XCTAssert(numberOfMatches > 0)
             } catch {
                 XCTFail("Network Fail")

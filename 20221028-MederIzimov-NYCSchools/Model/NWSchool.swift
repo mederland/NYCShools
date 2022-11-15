@@ -20,11 +20,3 @@ struct NWSchool: Decodable {
     let school_email: String?
     let website: String?
 }
-
-extension NWSchool: Identifiable, Hashable {
-    var id: String { dbn }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(dbn)
-    }
-}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		029DCE2F2923CFD3002D0448 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DCE2E2923CFD3002D0448 /* BackButton.swift */; };
 		02F25F07290D9BB8002E4A6D /* _0221028_MederIzimov_NYCSchoolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F25F06290D9BB8002E4A6D /* _0221028_MederIzimov_NYCSchoolsApp.swift */; };
 		02F25F0B290D9BBA002E4A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F25F0A290D9BBA002E4A6D /* Assets.xcassets */; };
 		02F25F0E290D9BBA002E4A6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F25F0D290D9BBA002E4A6D /* Preview Assets.xcassets */; };
@@ -16,8 +17,8 @@
 		02F25F35290D9E44002E4A6D /* NWSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F25F34290D9E44002E4A6D /* NWSchool.swift */; };
 		02F25F37290D9F5A002E4A6D /* SchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F25F36290D9F5A002E4A6D /* SchoolViewModel.swift */; };
 		02F25F39290D9FC4002E4A6D /* SchoolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F25F38290D9FC4002E4A6D /* SchoolView.swift */; };
-		02F25F3B290DA2F9002E4A6D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F25F3A290DA2F9002E4A6D /* ListView.swift */; };
-		02F25F3D290DA334002E4A6D /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F25F3C290DA334002E4A6D /* ListViewModel.swift */; };
+		02F25F3B290DA2F9002E4A6D /* NavigationShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F25F3A290DA2F9002E4A6D /* NavigationShellView.swift */; };
+		02F25F3D290DA334002E4A6D /* NavigationShellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F25F3C290DA334002E4A6D /* NavigationShellViewModel.swift */; };
 		02F25F3F290DA3A9002E4A6D /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F25F3E290DA3A9002E4A6D /* ScoreView.swift */; };
 		02F25F41290DA3F7002E4A6D /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F25F40290DA3F7002E4A6D /* ScoreViewModel.swift */; };
 		02F25F43290DA42C002E4A6D /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F25F42290DA42C002E4A6D /* ScoreModel.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		029DCE2E2923CFD3002D0448 /* BackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		02F25F03290D9BB8002E4A6D /* 20221028-MederIzimov-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20221028-MederIzimov-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F25F06290D9BB8002E4A6D /* _0221028_MederIzimov_NYCSchoolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0221028_MederIzimov_NYCSchoolsApp.swift; sourceTree = "<group>"; };
 		02F25F0A290D9BBA002E4A6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,8 +58,8 @@
 		02F25F34290D9E44002E4A6D /* NWSchool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWSchool.swift; sourceTree = "<group>"; };
 		02F25F36290D9F5A002E4A6D /* SchoolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewModel.swift; sourceTree = "<group>"; };
 		02F25F38290D9FC4002E4A6D /* SchoolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolView.swift; sourceTree = "<group>"; };
-		02F25F3A290DA2F9002E4A6D /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		02F25F3C290DA334002E4A6D /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		02F25F3A290DA2F9002E4A6D /* NavigationShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationShellView.swift; sourceTree = "<group>"; };
+		02F25F3C290DA334002E4A6D /* NavigationShellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationShellViewModel.swift; sourceTree = "<group>"; };
 		02F25F3E290DA3A9002E4A6D /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		02F25F40290DA3F7002E4A6D /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
 		02F25F42290DA42C002E4A6D /* ScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModel.swift; sourceTree = "<group>"; };
@@ -114,11 +116,11 @@
 		02F25F05290D9BB8002E4A6D /* 20221028-MederIzimov-NYCSchools */ = {
 			isa = PBXGroup;
 			children = (
-				02FB45A22910590E0043C199 /* Database */,
 				02F25F06290D9BB8002E4A6D /* _0221028_MederIzimov_NYCSchoolsApp.swift */,
+				02F25F31290D9C18002E4A6D /* Model */,
 				02F25F33290D9C32002E4A6D /* View */,
 				02F25F32290D9C23002E4A6D /* ViewModel */,
-				02F25F31290D9C18002E4A6D /* Model */,
+				02FB45A22910590E0043C199 /* Database */,
 				02F25F0C290D9BBA002E4A6D /* Preview Content */,
 			);
 			path = "20221028-MederIzimov-NYCSchools";
@@ -163,7 +165,7 @@
 		02F25F32290D9C23002E4A6D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				02F25F3C290DA334002E4A6D /* ListViewModel.swift */,
+				02F25F3C290DA334002E4A6D /* NavigationShellViewModel.swift */,
 				02F25F36290D9F5A002E4A6D /* SchoolViewModel.swift */,
 				02F25F40290DA3F7002E4A6D /* ScoreViewModel.swift */,
 			);
@@ -173,9 +175,10 @@
 		02F25F33290D9C32002E4A6D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				02F25F3A290DA2F9002E4A6D /* ListView.swift */,
+				02F25F3A290DA2F9002E4A6D /* NavigationShellView.swift */,
 				02F25F38290D9FC4002E4A6D /* SchoolView.swift */,
 				02F25F3E290DA3A9002E4A6D /* ScoreView.swift */,
+				029DCE2E2923CFD3002D0448 /* BackButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -325,11 +328,12 @@
 				02F25F3F290DA3A9002E4A6D /* ScoreView.swift in Sources */,
 				02F25F37290D9F5A002E4A6D /* SchoolViewModel.swift in Sources */,
 				02FB45A5291059260043C199 /* Database.xcdatamodeld in Sources */,
-				02F25F3D290DA334002E4A6D /* ListViewModel.swift in Sources */,
-				02F25F3B290DA2F9002E4A6D /* ListView.swift in Sources */,
+				02F25F3D290DA334002E4A6D /* NavigationShellViewModel.swift in Sources */,
+				02F25F3B290DA2F9002E4A6D /* NavigationShellView.swift in Sources */,
 				02FB45A72910596B0043C199 /* DatabaseManager.swift in Sources */,
 				02F25F41290DA3F7002E4A6D /* ScoreViewModel.swift in Sources */,
 				02F25F35290D9E44002E4A6D /* NWSchool.swift in Sources */,
+				029DCE2F2923CFD3002D0448 /* BackButton.swift in Sources */,
 				02F25F07290D9BB8002E4A6D /* _0221028_MederIzimov_NYCSchoolsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
